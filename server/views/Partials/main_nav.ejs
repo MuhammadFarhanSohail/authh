@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand navbar-dark -lg bg-dark"> <!--<nav class="navbar navbar-expand navbar-dark -lg bg-dark">-->
+  
+            
+
+    <a class="navbar-brand" href="/"> <img src="..\Assets\images\logo.jpeg" width="110" height="60"></a>
+        
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"> <!-- me-auto mb-2 mb-lg-0-->
+
+
+               <li class="nav-item">
+             <a class="nav-link" href="/home"><i class="fas fa-laptop-house"></i> Home </a>
+            
+
+             </li>
+        
+
+        
+            <li class="nav-item">
+          <a class="nav-link" href="/project"><i class="fa-brands fa-product-hunt"></i> Project </a>
+        </li>
+
+
+
+       
+            <li class="nav-item">
+          <a class="nav-link" href="/services"><i class="fa-solid fa-wrench"></i> Services </a>
+        </li>
+
+
+
+       
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><i class="fa-sharp fa-solid fa-person"></i> About</a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/Contact"><i class="fa-solid fa-envelope"></i> Contact </a>
+        </li>
+                                
+
+       <li class="nav-item">
+          <a class="nav-link" href="/contact-list"><i class="fa-solid fa-contact"></i> Business contacts </a>
+        </li>
+
+            
+               <% if(typeof displayName == 'string' && displayName) { %>
+            
+          
+             
+
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    sp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <li class="navbar-text"><i class="fas fa-lg fa-user"> </i>Welcome, <%= displayName %> </li><br>
+                     <li class="nav-item"><a href="/logout" class="nav-link">
+                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-lg fa-sign-out-alt"></i>Logout</a></li>
+
+                      <% } else { %>
+                    
+                      
+                    <li class="nav-item"><a href="/login" class="nav-link">
+                    
+                     <i class="fa-solid fa-arrow-right-to-bracket"></i> Login </a></li>
+
+               <% } %>
+           
+  </div>
+
+</nav>
+
+

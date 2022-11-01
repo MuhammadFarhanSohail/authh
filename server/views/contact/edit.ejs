@@ -1,0 +1,70 @@
+
+<%- include ../Partials/header.ejs %> 
+
+<%- include ../Partials/main_nav.ejs %>
+
+<!-- Content  for the add page -->
+ 
+<div class="container">
+  <div class="row">
+    <div class="offset-md-3 col-md-6">
+      <h2>Edit Contacts</h2><br><br><br>
+      <form class="form" method="post">
+        <div class="from-group">
+          <label for="nameTextField">Name </label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameTextField"
+            placeholder="Enter your name"
+            name="name"
+            value="<%= contact.name %>"
+            required
+          />
+        </div>
+
+        <div class="from-group">
+          <label for="authorTextField">Number </label>
+          <input
+            type="text"
+            class="form-control"
+            id="authorTextField"
+            placeholder="Enter your phone number"
+            name="number"
+            value="<%= contact.number %>"
+            required
+          />
+        </div>
+
+        <div class="from-group">
+          <label for="publishedTextField">Email </label>
+          <input
+            type="text"
+            class="form-control"
+            id="publishedTextField"
+            placeholder="Please enter your email"
+            name="Email"
+            value="<%= contact.Email %>"
+            required
+          />
+        </div>
+
+         
+    
+
+         
+
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-edit"></i>Submit
+        </button>
+
+        <a href="/contact-list" class="btn btn-warning">
+          <i class="fas fa-undo"></i>Cancel
+        </a>
+      </form>
+    </div>
+  </div>
+</div>
+<%- include ../Partials/bottom_nav.ejs %>  
+
+<%- include ../Partials/footer.ejs %>
